@@ -16,6 +16,7 @@ words = [
     "relativenumber",
     "saadparwaiz",
     "shiftwidth",
+    "signcolumn",
     "softtabstop",
     "tabstop",
     "tanjim",
