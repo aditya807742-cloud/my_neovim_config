@@ -19,7 +19,7 @@ return {
 		config = function()
 			-- Setup mason-lspconfig
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd" }, -- Mason uses old names
+				ensure_installed = { "lua_ls", "clangd", "basedpyright" }, -- Mason uses old names
 				automatic_installation = true,
 			})
 
@@ -58,9 +58,15 @@ return {
 					},
 				},
 				ts_ls = {}, -- New name for tsserver
-				pyright = {},
 				clangd = {},
-       basedpyright = {},
+        codebook = {},
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              typeCheckingMode = "basic",
+            },
+          },
+        },
 			}
 
 			for name, config in pairs(servers) do
