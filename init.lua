@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.api.nvim_set_hl(0, "LineNr", { link = "Comment" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { link = "Function" })
 local opts = {}
-
 require("vim-options")
 require("lazy").setup("plugins")
 
