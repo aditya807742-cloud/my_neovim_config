@@ -19,7 +19,7 @@ return {
 		config = function()
 			-- Setup mason-lspconfig
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "basedpyright" }, -- Mason uses old names
+				ensure_installed = { "lua_ls", "clangd", "basedpyright","jdtls" }, -- Mason uses old names
 				automatic_installation = true,
 			})
 
@@ -60,6 +60,7 @@ return {
 				ts_ls = {}, -- New name for tsserver
 				clangd = {},
         codebook = {},
+        jdtls = {},
         basedpyright = {
           settings = {
             basedpyright = {
