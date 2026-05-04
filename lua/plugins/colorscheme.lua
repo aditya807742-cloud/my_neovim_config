@@ -1,9 +1,10 @@
+-- lua/plugins/rose-pine.lua
 return {
-  "andreasvc/vim-256noir",
-  lazy = false,
-  name = "vim-256noir",
-  priority = 1000,
-  config = function ()
-    -- vim.cmd.colorscheme "256_noir"
-  end
+	"rose-pine/neovim",
+	name = "rose-pine",
+	config = function()
+		vim.cmd("colorscheme rose-pine")
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+	end
 }
