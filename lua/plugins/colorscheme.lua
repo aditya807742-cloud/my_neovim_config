@@ -6,5 +6,9 @@ return {
 		vim.cmd("colorscheme retrobox")
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+    vim.cmd [[
+  highlight SignColumn guibg=NONE ctermbg=NONE
+  highlight LineNr guibg=NONE
+]]
 	end
 }

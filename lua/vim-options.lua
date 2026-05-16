@@ -30,6 +30,6 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set({'n','v'}, '<leader>y', '"+Y')
 
 vim.o.wrap = false
-vim.opt.signcolumn = "no"
+vim.opt.signcolumn = "yes"
 vim.opt.cursorcolumn = false
 vim.opt.cursorline = false
