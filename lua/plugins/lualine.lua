@@ -3,7 +3,7 @@ return {
 	config= function()
 	require('lualine').setup({
         options = {
-    theme = 'onedark',
+    theme = 'powerline_dark',
     icons_enabled = true,
     component_separators = '|',
     section_separators = '',
