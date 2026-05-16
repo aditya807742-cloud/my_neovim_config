@@ -29,5 +29,7 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 --copy to clipboard
 vim.keymap.set({'n','v'}, '<leader>y', '"+Y')
 
-vim.o.wrap = true
-
+vim.o.wrap = false
+vim.opt.signcolumn = "no"
+vim.opt.cursorcolumn = false
+vim.opt.cursorline = false
