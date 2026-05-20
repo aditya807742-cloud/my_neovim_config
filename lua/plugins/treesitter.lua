@@ -1,13 +1,18 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate",
-	config = function()
-		local config = require("nvim-treesitter.configs")
-	config.setup({
-		ensure_installed = {"c","java","cpp","python", "lua"},
-			auto_install = true,
-		highlight = {enable = true },
-		indent = {enable = true },
-})
-end
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+        -- The new branch uses this clean API to ensure parsers are installed
+        require("nvim-treesitter").install({
+            "c",
+            "java",
+            "cpp",
+            "python",
+            "lua",
+            "markdown",
+            "markdown_inline",
+            "json"
+        })
+        vim.treesitter.language.register('json', { 'jsonc' })
+    end
 }

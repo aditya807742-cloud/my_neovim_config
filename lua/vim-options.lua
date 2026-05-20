@@ -32,4 +32,4 @@ vim.keymap.set({'n','v'}, '<leader>y', '"+Y')
 vim.o.wrap = false
 vim.opt.signcolumn = "yes"
 vim.opt.cursorcolumn = false
-vim.opt.cursorline = false
+vim.opt.cursorline = true
